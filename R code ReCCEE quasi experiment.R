@@ -376,7 +376,7 @@ ggplot(aut.melt, aes(x = course, y = value)) +
         axis.text.x = element_text(size = 12, face = "bold", family = "Arial", color = "gray"),
         axis.text.y = element_text(size = 12, face = "bold", family = "Arial", color = "gray")) +
   theme_minimal() +
-  geom_hline(yintercept = mean(course_stats_rsrm$mean), linetype = "dashed", color = "black")+
+  geom_hline(yintercept = mean(course_stats_aut$mean), linetype = "dashed", color = "black")+
   scale_y_continuous(breaks=c(1,2,3,4,5,6), limits=c(1,6)) + theme(axis.title.y = element_text(size = 16))
 
 
